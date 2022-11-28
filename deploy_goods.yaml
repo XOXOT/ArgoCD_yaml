@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: fatclinic-was-deployment
+  name: goods-was-deployment
   labels:
     tier: was
 spec:
@@ -15,8 +15,8 @@ spec:
         tier: was
     spec:
       containers:
-      - name: fatclinic-container
-        image: asia.gcr.io/terraform-tae/fatclinic:1
+      - name: goods-container
+        image: asia.gcr.io/terraform-tae/goods:26
         ports:
         - containerPort: 8080
         resources:
@@ -29,7 +29,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: fatclinic-svc
+  name: goods-svc
 spec:
   selector:
     tier: was
@@ -38,4 +38,3 @@ spec:
       port: 8080
       targetPort: 8080
   type: LoadBalancer
-
