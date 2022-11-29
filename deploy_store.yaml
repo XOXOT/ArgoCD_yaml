@@ -5,7 +5,7 @@ metadata:
   labels:
     tier: was
 spec:
-  replicas: 3 # pod �~\�~H~X �~@�| ~U 
+  replicas: 3
   selector:
     matchLabels:
       tier: was
