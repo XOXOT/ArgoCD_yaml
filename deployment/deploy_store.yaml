@@ -18,11 +18,7 @@ spec:
         node: service       
       containers:
       - name: store-container
-<<<<<<< HEAD
-        image: asia.gcr.io/terraform-tae/goods:1
-=======
         image: asia.gcr.io/terraform-tae/store:26
->>>>>>> 864fc3cae2a5c81b0baf936bab8fbbdf58407b5c
         ports:
         - containerPort: 8080
         resources:
