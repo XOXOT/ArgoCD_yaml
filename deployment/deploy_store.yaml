@@ -14,6 +14,8 @@ spec:
       labels:
         tier: was
     spec:
+      nodeSelector:
+        node: service       
       containers:
       - name: store-container
         image: asia.gcr.io/terraform-tae/store:5
