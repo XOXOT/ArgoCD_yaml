@@ -1,0 +1,9 @@
+apiVersion: cloud.google.com/v1
+kind: BackendConfig
+metadata:
+  name: kf-backendconfig-01
+spec:
+  securityPolicy:
+    name: "kf-security-policy"
+  sessionAffinity:
+    affinityType: "CLIENT_IP"

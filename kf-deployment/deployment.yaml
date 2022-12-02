@@ -1,23 +1,23 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: store-was-deployment
+  name: kf-web-deployment
   labels:
-    tier: was
+    tier: web
 spec:
   replicas: 3
   selector:
     matchLabels:
-      tier: was
+      tier: web
   template:
     metadata:
       labels:
-        tier: was
+        tier: web
     spec:
       nodeSelector:
         node: app       
       containers:
-      - name: store-container
+      - name: kf-container
         image: asia.gcr.io/terraform-tae/store:26
         ports:
         - containerPort: 8080
