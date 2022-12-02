@@ -5,3 +5,5 @@ metadata:
 spec:
   securityPolicy:
     name: "xoxot-security-policy"
+  sessionAffinity:
+    affinityType: "CLIENT_IP"
