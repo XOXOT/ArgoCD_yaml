@@ -14,6 +14,8 @@ spec:
       labels:
         tier: web
     spec:
+      nodeSelector:
+        node: app
       containers:
       - name: kf-web-container
         image: asia.gcr.io/class-mino-01/kf-web:4
