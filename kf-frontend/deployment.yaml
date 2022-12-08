@@ -18,6 +18,6 @@ spec:
         node: app
       containers:
       - name: kf-web-container
-        image: asia.gcr.io/class-mino-01/kf-web:4
+        image: asia.gcr.io/class-mino-01/kf-web:6
         ports:
         - containerPort: 80
