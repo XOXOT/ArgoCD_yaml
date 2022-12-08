@@ -5,7 +5,7 @@ metadata:
   labels:
     tier: web
 spec:
-  replicas: 1
+  replicas: 3
   selector:
     matchLabels:
       tier: web
