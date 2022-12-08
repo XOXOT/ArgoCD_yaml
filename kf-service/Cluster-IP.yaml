@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: L4-lb       # 나중에 web과 연동할 때 httpd-vhosts.conf 파일에 이름을 쓰니 기억 
+  name: l4-lb       # 나중에 web과 연동할 때 httpd-vhosts.conf 파일에 이름을 쓰니 기억 
 spec:
   selector:
     tier: was # Tag가 tier: was와 서비스를 통합해줌 
   ports:
-    - name: kf-l4
+    - name: kf-l4-port
       protocol: TCP
       port: 8080
       targetPort: 8080
