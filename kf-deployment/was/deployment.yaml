@@ -1,18 +1,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: kf-web-deployment
+  name: kf-was-deployment
   labels:
-    tier: web
+    tier: was
 spec:
   replicas: 3
   selector:
     matchLabels:
-      tier: web
+      tier: was
   template:
     metadata:
       labels:
-        tier: web
+        tier: was
     spec:
       nodeSelector:
         node: app       
