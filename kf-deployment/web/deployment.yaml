@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kf-web-deployment
+  labels:
+    tier: web
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      tier: web
+  template:
+    metadata:
+      labels:
+        tier: web
+    spec:
+      containers:
+      - name: kf-web-container
+        image: asia.gcr.io/class-mino-01/kf-web:4
+        ports:
+        - containerPort: 80
