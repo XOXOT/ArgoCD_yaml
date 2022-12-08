@@ -6,9 +6,9 @@ metadata:
     cloud.google.com/backend-config: '{"default": "kf-backendconfig-01"}'
 spec:
   ports:
-  - port: 8080
+  - port: 80
     protocol: TCP
-    targetPort: 8080
+    targetPort: 80
   selector:
     tier: web
   type: NodePort
