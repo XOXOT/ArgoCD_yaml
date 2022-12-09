@@ -18,7 +18,7 @@ spec:
         node: app       
       containers:
       - name: kf-container
-        image: asia.gcr.io/class-mino-01/kf-was:11
+        image: asia.gcr.io/class-mino-01/kf-was:12
         ports:
         - containerPort: 8080
         resources:
